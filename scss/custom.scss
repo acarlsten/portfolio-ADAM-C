@@ -1,0 +1,102 @@
+@import 'skeleton.scss';
+
+
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$background-color: #f0fcfa !default;
+
+body {
+  background-color: $background-color;
+}
+
+.splash {
+  border-bottom: 1px solid $font-color;
+  margin-top: 0!important;
+  padding-top: 3rem;
+}
+
+//:last-child was giving me SHIT
+.links {
+  margin-bottom: 3rem;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+#logo {
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/** RESPONSIVE NAVBAR STUFF **/
+
+nav {
+
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (#{$bp-larger-than-phablet}) {
+  nav {
+
+  margin-top: 2rem;
+
+    a {
+      margin-right: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 0;
+      &:first-child {
+        padding-left: 3rem;
+      }
+    }
+
+    b {
+      display: inline-block;
+      width: 1px;
+      height: 75px;
+      position: relative;
+      top: -25px;
+      text-indent: -9999em;
+      background: $font-color;
+      -webkit-transform: rotate(18deg);
+      -moz-transform: rotate(18deg);
+      -ms-transform: rotate(18deg);
+      -o-transform: rotate(18deg);
+      transform: rotate(18deg);
+    }
+  }
+}
+
+@media (#{$bp-larger-than-tablet}) {
+  nav {
+    a {
+      margin-right: 2rem;
+      margin-left: 2rem;
+      &:first-child {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+
+@media (#{$bp-larger-than-desktop}) {
+  nav {
+    a {
+      &:first-child {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
