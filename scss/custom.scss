@@ -4,6 +4,10 @@
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $background-color: #f0fcfa !default;
 
+h1, h2, h3, h4, h5, h6 {
+  color: $link-color;
+}
+
 body {
   background-color: $background-color;
 }
@@ -32,6 +36,40 @@ body {
 .center {
   text-align: center;
   margin: 0 auto;
+}
+
+/** Blog stuff **/
+.blogcontent {
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.posttitle {
+  a {
+    text-decoration: none;
+  }
+}
+
+.postlist {
+  border-left: 1px solid $font-color;
+}
+
+hr {
+  border-top: 1px solid $font-color;
+}
+
+.hidden-unless-mobile {
+  display:inline-block;
+}
+
+@media (#{$bp-larger-than-phablet}) {
+  .hidden-unless-mobile {
+    display: none;
+  }
 }
 
 /** RESPONSIVE NAVBAR STUFF **/

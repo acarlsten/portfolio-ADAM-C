@@ -16,7 +16,8 @@ module.exports = function(grunt) {
                 },
                 files: {
                     "css/skeleton.css": "scss/skeleton.scss",
-                    "css/custom.css": "scss/custom.scss"
+                    "css/custom.css": "scss/custom.scss",
+                    "blog/themes/addec/custom.css": "scss/custom.scss"
                 }
             }
         },
