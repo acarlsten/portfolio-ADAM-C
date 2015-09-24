@@ -39,7 +39,7 @@
  $config['pages_order'] = 'desc';                // Order pages "asc" or "desc"
 // $config['excerpt_length'] = 50;                // The pages excerpt length (in words)
  $config['content_dir'] = 'content-sample/';    // Content directory
-
+ $config['pages_order_by'] = 'placing';
 /*
  * TIMEZONE
  */
